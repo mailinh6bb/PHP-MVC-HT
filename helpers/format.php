@@ -17,8 +17,8 @@ class Format{
 
  public function validation($data){
     $data = trim($data);
-    $data = stripcslashes($data);
-    $data = htmlspecialchars($data);
+    $data = stripcslashes($data); // loai bỏ các ký tự /
+    $data = htmlspecialchars($data); // đưa các ký tự html thành dạng tự thể chứ không phải dạng echo
     return $data;
  }
 
